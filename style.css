@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #003366;
+    color: white
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(to right, #003366, #0059b3);
+    color: white
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-tp: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #003366;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 280px;
+    background: #f4f4f4;
+    border-radius: 10px;
+     overflow: hidden;
+}
+
+.card img {
+    width: 100%
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.booking {
+    background: #e6f0ff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.booking form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.booking input,
+.booking select,
+.booking button,{
+     width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+.booking button {
+     background: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE RESPONSE */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
